@@ -27,7 +27,7 @@ const App = () => {
       <Router>
 
     <div class="container">
-    <div class=row>
+    <div class="row">
       <nav className="navbar navbar-expand-lg ">
               <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
