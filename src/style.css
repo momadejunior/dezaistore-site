@@ -1,0 +1,619 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  body{
+	font-family: 'Poppins', sans-serif;
+  }
+
+body{
+	position: relative;
+}
+
+img{
+    width: 100%;
+}
+
+.logo {
+	width: 128px;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+
+.black {
+	background: #000;
+	position: absolute;
+	bottom: -114px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.black a,.black p{
+	color:#fff !important;
+}
+
+
+.newsletter-form__input {
+	border: 1px solid #eeeeee;
+	background-color: #f6f6f6;
+	height: 65px;
+	width: 100%;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.newsletterContainer {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+img{
+  width: 100%;
+}
+
+.product-card {
+	background: #eeeeeee3;
+	padding: 13px;
+	border-radius: 4px;
+	text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-info {
+	margin-top: 20px;
+}
+
+
+.title-product {
+	position: relative;
+	top: 40%;
+	left: 10%;
+	width: 30%;
+	color: #fff;
+}
+
+.add-to-cart {
+	background: #C2080F;
+	padding: 10px;
+	width: 60%;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.quantity {
+	display: flex;
+	align-items: center;
+  }
+
+  .quantity input {
+	width: 50px; /* Adjust the width as needed */
+	text-align: center;
+	margin: 0 10px;
+  }
+
+  .quantity button {
+	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 14px;
+  }
+
+
+  .btn-action {
+	background: #000;
+	width: 60%;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.collection {
+	margin-top: 76px;
+	margin-bottom: 44px;
+}
+
+.el-newsletter{
+  background:lightgrey;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.home-title-collection {
+	margin-top: 100px;
+	margin-bottom: 68px;
+}
+
+.add-to-cart a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.product-action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.addToCartButton{
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	margin-top: 18px;
+	margin-bottom: 40px;
+	border: none;
+}
+
+.custom-dropdown {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  .custom-option {
+	padding: 8px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin: 2px;
+  }
+  
+  .custom-option:hover {
+	background-color: #e0e0e0;
+  }
+
+/* Image styling */
+.img-product {
+	overflow: hidden;
+  }
+  
+  /* Initial state */
+  .img-product img {
+	transform: scale(1);
+	transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .img-product img:hover {
+	transform: scale(1.1);
+  }
+  
+
+  .badge{
+	background: rgb(199, 55, 12);
+  }
+
+  .breadcrumb {
+	padding-top: 100px !important;
+	padding-bottom: 100px !important;
+	padding-left: 10px !important;
+	height: 300px;
+}
+
+.faq{
+	background: url('https://media.graphassets.com/r5KgeYO0QqeDWBi2Mrsp');
+	background-size: cover;
+}
+
+.container-accordion{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+
+
+/*cart css*/
+
+.red{
+
+	width: auto;
+	height: 20px;
+	background-color: #C2080F;
+}
+
+.colorSelect{
+	background-color: lightgrey;
+}
+
+.separate {
+	margin-bottom: 2px;
+}
+
+.Beige{
+	background: #f5bf8c !important;
+}
+
+.Red{
+	background: #cf2026;
+}
+
+.Orange{
+	background: orange;
+}
+
+.Yellow{
+	background: yellow;
+}
+
+.White{
+	background: #fff;
+}
+
+.Blue{
+	background: rgb(41, 85, 206);
+}
+
+
+.Blue, .Yellow, .Red, .White, .Orange, .Beige {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 2px;
+}
+
+
+.color-col {
+	background: lightgrey;
+	margin-top: 2px;
+	height: 20px;
+}
+
+.whishlist{
+	background: lightgrey;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.size-col{
+	background: lightgrey;
+	margin-top: 2px;
+	height: auto;
+}
+
+
+.size{
+	width: 24px;
+	text-align: center;
+	border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+
+.sizeSelect div{
+	width: 20px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sizeSelect {
+	width: 24px;
+	text-align: center;
+	background:lightgrey;
+}
+  .color-col,
+  .size-col {
+	margin-right: 5px; /* Adjust spacing between color and size columns */
+	width: 24px;
+	height: 24px;
+  }
+  
+  /* Add any other styling you need for your dropdowns */
+  .ps {
+	position: relative;
+}
+
+.clr {
+	border-bottom: 1px solid #fff;
+	height: 24px;
+	margin-bottom: -2px;
+}
+
+
+.title-product{
+	position: relative;
+	top: 40%;
+	left: 10%;
+	width: 30%;
+}
+
+
+.title-product h1{
+	font-weight: bold;
+}
+
+.buy-product {
+	width: 200px;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	margin-top: 18px;
+	margin-bottom: 40px;
+	border: none;
+}
+
+.btn-custom {
+    background-color:black; /* Replace with your preferred color code */
+    color: #fff; /* Replace with the text color you want */
+    /* Add any other styles as needed */
+}
+
+
+.product-name{
+	margin-top: 20px;
+}
+
+.product-name  a{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+.sizeDetails,.colorDetails{
+}
+
+.sizeDetails .size {
+	width: 24px;
+	text-align: center;
+	border-bottom: 2px solid rgb(255, 255, 255);
+	border: 2px solid crimson;
+	margin-right: 2px;
+	cursor: pointer;
+	float: left;
+}
+
+.sizeDetails{
+	clear: both;
+}
+
+footer a {
+	color: #fff;
+}
+
+
+.slick-arrow.slick-next {
+	right: 0;
+}
+
+
+.slick-arrow.slick-prev {
+	left: 0;
+	z-index: 9999 !important;
+	top: 50% !important;
+}
+
+
+.navbar.navbar-expand-lg {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.nav-item a{
+	color: #000;
+}
+  
+
+.footer{
+	background: #000;
+	width: 100%;
+}
+
+.success-box {
+	width: 100%;
+	height: 400px;
+	border: 1px solid grey;
+	border-radius: 8px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 200px;
+	box-shadow: 2px 2px 22px grey;
+}
+
+.success-box .text{
+	margin-top: 200px;
+}
+
+.content-color {
+	float: left;
+	border: 2px solid;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+
+.cheackout-page{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+
+/*cart css*/
+
+.event-quantity button {
+	background: black !important;
+	color: #fff !important;
+	border: none;
+	width: 30px !important;
+	height: 30px;
+}
+
+.grey-bg{
+	background: lightgrey;
+}
+
+.input {
+	width: 30px !important;
+	height: 30px;
+	text-align: center;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.event-quantity{
+	display: flex;
+}
+
+
+.remove-button {
+	background: #000;
+	color: #fff;
+	border: none;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.cart-section{
+	margin-top: 100px;
+	margin-bottom: 550px;
+}
+
+td{
+	width: 100px;
+}
+
+.tdbold td{
+	font-weight: bold;
+	font-size: large;
+}
+
+.tdbold {
+	border-bottom: 1px solid gray;
+}
+
+.row-items{
+	border-bottom: 1px solid grey;
+}
+
+.products-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.summary{
+	border:2px solid grey;
+	
+}
+
+.table-cart {
+	width: 100%;
+}
+
+
+
+/*Checkout*/
+
+/* Add some basic styling to the form */
+#checkoutForm {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .form-group {
+	margin-bottom: 15px;
+  }
+  
+  label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+  }
+  
+  button {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+  }
+  
+  /* Style the order details section */
+  #order-details {
+	margin-top: 30px;
+  }
+
+
+  #order-details,#payment-methods,.summary,.table-cart,#privacy-policy {
+	padding: 40px 45px;
+	border: 2px solid #eeeeee;
+}
+
+
+  
+  table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 15px;
+  }
+  
+  th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+  }
+  
+  /* Style the payment methods section */
+  #payment-methods {
+	margin-top: 30px;
+  }
+  
+  /* Style the privacy policy section */
+  #privacy-policy {
+	margin-top: 30px;
+	color: #888;
+  }
+
+  .welcome-section{
+	background: #000;
+	color: #fff;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	margin-bottom: 100px;
+	margin-top: -10px;
+  }
+  
+  /* Responsive styles for small screens */
+  @media (max-width: 768px) {
+	.col-md-5 {
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+  }
+  
+
+  /*slider*/
+/* Add this CSS to your stylesheet or in your component */
+/* SliderMain.css */
+

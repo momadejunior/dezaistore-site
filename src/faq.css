@@ -1,0 +1,131 @@
+/*Home Faq*/
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+
+/* Reset and Box Model */
+* {
+  box-sizing: border-box;
+}
+
+
+.container-accordion{
+  width: 100%;
+}
+
+.col-accordion{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.row {
+	width: 100%;
+}
+/* Accordion Styles */
+.accordion-item {
+  width: 100%;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+button[aria-expanded='true'] {
+  border-bottom: 1px solid var(--blue);
+}
+
+.accordion-button {
+	position: relative;
+	display: block;
+	text-align: left;
+	width: 100%;
+	padding: 1em 0;
+	color: var(--text);
+	font-size: 1.15rem;
+	font-weight: 400;
+	border: none;
+	background: none;
+	outline: none;
+	background: #000 !important;
+	border-radius: unset !important;
+	color: #fff !important;
+}
+
+
+.accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.beige{
+  background: red;
+}
+
+.icon {
+	display: inline-block;
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	border: 1px solid;
+	border-radius: 22px;
+}
+
+.icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion-button {
+  padding-left: 10px;
+}
+
+.accordion-content.visible p {
+  padding-left: 20px;
+}
+
+.accordion-button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+
+.accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+.accordion-button:focus {
+	z-index: 3;
+	/* border-color: var(--bs-accordion-btn-focus-border-color); */
+	outline: 0;
+	box-shadow:unset !important;
+}
+

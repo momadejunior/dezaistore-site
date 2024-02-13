@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity</title>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <div id="total-price">Total: $<span id="total-price-value">0</span></div>
+
+    <script>
+        let counts = [1, 1]; // Initialize with 1 for each product
+        let product = [{ name: "BMW", color: "red", price: 1000 }, { name: "VW", color: "green", price: 2000 }];
+        let appDisplay = document.getElementById('app');
+
+        localStorage.setItem("products",JSON.stringify(product));
+        let save = localStorage.getItem("products");
+
+
+        let getArray = JSON.parse(save)
+
+        console.log(getArray)
+
+
+        for (let i = 0; i < product.length; i++) {
+            appDisplay.innerHTML += `
+                <div>
+                    Product Name: ${getArray[i].name} ${getArray[i].color} $${getArray[i].price}
+                    <div id="quantity-display-${i}">1</div>
+                    <button onclick="decrease(${i})">-</button>
+                    <button onclick="add(${i})">+</button>
+                    <button onclick="remove(${i})">Remove</button>
+                </div>
+            `;
+        }
+
+        function updateDisplay(index) {
+            // Update the quantity display for the specific product
+            document.getElementById(`quantity-display-${index}`).textContent = counts[index];
+            updateTotalPrice();
+        }
+
+        function decrease(index) {
+            // Decrease count for the specific product, but ensure it doesn't go below 1
+            counts[index] = Math.max(1, counts[index] - 1);
+            updateDisplay(index);
+        }
+
+        function add(index) {
+            // Increase count for the specific product
+            counts[index]++;
+            updateDisplay(index);
+        }
+
+        function remove(index) {
+            // Remove the entire product
+            const productContainer = document.getElementById(`quantity-display-${index}`).parentNode;
+            productContainer.remove();
+            updateTotalPrice();
+        }
+
+        function updateTotalPrice() {
+            // Calculate and update the total price for all products
+            let totalPrice = 0;
+            for (let i = 0; i < product.length; i++) {
+                totalPrice += counts[i] * product[i].price;
+            }
+            document.getElementById('total-price-value').textContent = totalPrice;
+        }
+
+        // Initial display
+        updateDisplay(0); // You may choose to initialize with a specific product index
+    </script>
+</body>
+</html>

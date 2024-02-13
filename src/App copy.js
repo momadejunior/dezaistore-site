@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepage from "./Homepage";
+import Products from "./products";
 import ShoppingCart from "./cart";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +11,12 @@ import Details from "./details";
 import FaqAccordion from "./faq";
 import ShopDisplay from "./shop";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCoffee,
+  faCode,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
+
 import useCartCount from "./useCartCount";
 import PoliticaDeTrocasDevolucoes from "./pages/politicadeDevolucao";
 import TermAndCondition from "./pages/terms-and-condition";
@@ -25,7 +31,9 @@ const App = () => {
   return (
     <>
       <Router>
-      <nav className="navbar navbar-expand-lg ">
+        <div className="container">
+          <div className="row">
+            <nav className="navbar navbar-expand-lg ">
               <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
                   <img
@@ -88,33 +96,15 @@ const App = () => {
                 </div>
               </div>
             </nav>
-        <Routes>
-        <Route path="/cart" element={<ShoppingCart />} />
-          <Route path="/" element={<Homepage />} />
-          <Route path="/shop" element={<ShopDisplay />} />
+          </div>
+        </div>
 
-          <Route path="/details/:id" element={<Details />} />
-          <Route path="/faq" element={<FaqAccordion />} />
-          <Route path="/privacy_policy" element={<PoliticaDeTrocasDevolucoes />} />
-          <Route path="/terms_and_conditions" element={<TermAndCondition />} />
-          <Route path="/delivery" element={<EnviosEEntrega />} />
-          <Route path="/contact-us" element={<ContactUs/>} />
-          <Route path="/checkout" element={<Checkout/>} />
-          <Route path="/success" element={<SuccessPage/>} />
+        <Routes>
+          {/* Routes here */}
         </Routes>
       </Router>
-<div class="">
-  <footer class="footer">
-    <ul class="">
-      <li class=""><a href="#" class="nav-link">Home</a></li>
-      <li class=""><a href="#" class="nav-link ">Features</a></li>
-      <li class=""><a href="#" class="nav-link ">Pricing</a></li>
-      <li class=""><a href="#" class="nav-link">FAQs</a></li>
-      <li class=""><a href="#" class="nav-link ">About</a></li>
-    </ul>
-    <p class="text-center">© 2022 Company, Inc</p>
-  </footer>
-</div>
+
+      <Footer />
     </>
   );
 };
