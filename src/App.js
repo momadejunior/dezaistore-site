@@ -103,18 +103,7 @@ const App = () => {
           <Route path="/success" element={<SuccessPage/>} />
         </Routes>
       </Router>
-<div class="">
-  <footer class="footer">
-    <ul class="">
-      <li class=""><a href="#" class="nav-link">Home</a></li>
-      <li class=""><a href="#" class="nav-link ">Features</a></li>
-      <li class=""><a href="#" class="nav-link ">Pricing</a></li>
-      <li class=""><a href="#" class="nav-link">FAQs</a></li>
-      <li class=""><a href="#" class="nav-link ">About</a></li>
-    </ul>
-    <p class="text-center">© 2022 Company, Inc</p>
-  </footer>
-</div>
+  <Footer/>
     </>
   );
 };
