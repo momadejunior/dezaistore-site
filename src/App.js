@@ -26,7 +26,7 @@ const App = () => {
     <>
       <Router>
       <nav className="navbar navbar-expand-lg ">
-              <div className="container-fluid">
+              <div className="container">
                 <Link className="navbar-brand" to="/">
                   <img
                     src="https://media.graphassets.com/LwFMRB5dQJ214DUK73ok"
