@@ -25,6 +25,9 @@ const App = () => {
   return (
     <>
       <Router>
+
+    <div class="container">
+    <div class=row>
       <nav className="navbar navbar-expand-lg ">
               <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
@@ -88,6 +91,8 @@ const App = () => {
                 </div>
               </div>
             </nav>
+                        </div>
+                        </div>
         <Routes>
         <Route path="/cart" element={<ShoppingCart />} />
           <Route path="/" element={<Homepage />} />
